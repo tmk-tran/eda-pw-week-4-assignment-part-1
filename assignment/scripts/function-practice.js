@@ -134,14 +134,51 @@ console.log( sumAll(array1) );
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
 
+function allPositive(input) {
+  const positiveNums = [];
+  for ( number of (input) ) {
+    if ( number > 0 ) {
+      positiveNums.push( number );
+    }
+  }
+  return positiveNums;
 }
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+
+// "The Lario and Muigi Problem"
+//  
+//  Issue 
+//  Looks like some hoodlum plumber and his brother has been running around and damaging your stages again.
+
+//  The pipes connecting your level's stages together need to be fixed before you receive any more complaints.
+
+//  The pipes are correct when each pipe after the first is 1 more than the previous one.
+
+//  Task
+//  Given the a list of unique numbers sorted in ascending order, return a new list so that the values increment by 1 for each index from the minimum value up to the maximum value (both included).
+
+function fixPipes( numbers ) {
+  const minValue = numbers[0];
+  const maxValue = numbers[numbers.length-1];
+
+  const fixedArray = [];
+  for ( let i = minValue; i <= maxValue; i++ ) {
+    fixedArray.push(i);
+  }
+  return fixedArray;
+}
+
+const input = [ 1, 3, 7, 9, 11 ];
+const output = fixPipes( input );
+console.log( output ); 
+
 
 
 // DO NOT MODIFY
