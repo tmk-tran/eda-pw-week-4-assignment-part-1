@@ -20,7 +20,7 @@ function helloName( name ) {
   return 'Hello, ' + name + '!';
 }
 
-const greetingHi = helloName( 'Mason' );
+let greetingHi = helloName( 'Mason' );
 
 // Remember to call the function to test
 console.log( greetingHi );
@@ -33,7 +33,7 @@ function addNumbers( firstNumber, secondNumber ) {
   return firstNumber + secondNumber;
 }
 
-const sum1 = addNumbers( 6, 4 );
+let sum1 = addNumbers( 6, 4 );
 console.log( sum1 );
 
 
@@ -44,7 +44,7 @@ function multiplyThree( num1, num2, num3 ) {
   return num1 * num2 * num3;
 }
 
-const times3 = multiplyThree( 4, 8, 10 );
+let times3 = multiplyThree( 4, 8, 10 );
 console.log( times3 );
 
 
@@ -128,8 +128,8 @@ function sumAll( array ) {
   return sum;
 }
 
-const array1 = [ 5, 6, 8, 9, 11 ];
-const array2 = [ 23, 56, 87, 33 ];
+let array1 = [ 5, 6, 8, 9, 11 ];
+let array2 = [ 23, 56, 87, 33 ];
 console.log( sumAll(array1) );
 console.log( sumAll(array2) );
 
@@ -148,8 +148,8 @@ function allPositive( input ) {
   return positiveNums;
 }
 
-const input1 = [ -1, -7, 3, 8, 11, 5, -6 ];
-const input2 = [ -2, -5, -6, -8, -9 ];
+let input1 = [ -1, -7, 3, 8, 11, 5, -6 ];
+let input2 = [ -2, -5, -6, -8, -9 ];
 console.log( allPositive(input1) );
 console.log( allPositive(input2) );
 
@@ -182,10 +182,13 @@ function fixPipes( numbers ) {
   return fixedArray;
 }
 
-const input = [ 1, 3, 7, 9, 11 ];
+let input = [ 1, 3, 7, 9, 11 ];
 const output = fixPipes( input );
 console.log( output ); 
 
+let input2 = [ 1, 5, 7, 10, 14 ];
+fixPipes( input2 );
+console.log( output ); 
 
 
 // DO NOT MODIFY
