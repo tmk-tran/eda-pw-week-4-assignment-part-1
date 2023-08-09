@@ -97,7 +97,7 @@ function find( value, array ) {
   return false;
 }
 
-const numbers = [ 1, 2, 3, 4, 5 ];
+let numbers = [ 1, 2, 3, 4, 5 ];
 console.log( find( 4, numbers) );
 console.log( find( 9, numbers) );
 console.log( find( 1, numbers) );
@@ -186,9 +186,10 @@ let input = [ 1, 3, 7, 9, 11 ];
 const output = fixPipes( input );
 console.log( output ); 
 
-let input2 = [ 1, 5, 7, 10, 14 ];
-fixPipes( input2 );
-console.log( output ); 
+// let input2 = [ 1, 5, 7, 10, 14 ];
+// output = fixPipes( input2 );
+// console.log( output ); 
+
 
 
 // DO NOT MODIFY
